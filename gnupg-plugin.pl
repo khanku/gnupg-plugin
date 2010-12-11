@@ -16,7 +16,8 @@ use Crypt::GPG;
 
 # 15.05.2009 - 0.1 - proof of concept (decryption only)
 # 16.05.2009 - 0.2 - now encrypting as well
-our $VERSION = 0.2;
+# 11.12.2010 - 0.3 - minor fixes
+our $VERSION = 0.3;
 
 # Set your GPG key ID here
 my $MY_KEY_ID = '0xDCC51FA6';
@@ -28,12 +29,12 @@ my $GPG_OPTS  = '--use-agent';
 my %CONNSTATE = ();
 
 our %PLUGIN_INFO = (perl_api_version => 2,
-                    name        => 'GnuPG Plugin',
-                    version     => '0.2',
+                    name        => 'Jabber GnuPG Plugin',
+                    version     => '0.3',
                     summary     => 'Send and receive gpg encrypted messages.',
                     description => 'XEP-0027',
-                    author      => 'François Chavant <code\@mail.chavant.info>',
-                    url         => 'http://www.chavant.info',
+                    author      => 'Francois Chavant <code@mail.chavant.info>',
+                    url         => 'http://blog.chavant.info/2009/06/01/gnupg-plugin-for-pidgin',
                     load        => 'plugin_load',
                     unload      => 'plugin_unload',
 );

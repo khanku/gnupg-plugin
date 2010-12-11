@@ -1,1 +1,25 @@
 This is a Jabber GnuPG Plugin (XEP-0027) for Pidgin taking advantage of Pidgin's scripting capabilities.
+
+
+== INSTALL ==
+
+- Download 'gnugp-plugin.pl' to ~/.purple/plugins or $PREFIX/lib/purple (creating the directory if it doesn't exist)
+- Make sure you have the Crypt::GPG perl plugin, for example:
+ - under Ubuntu: aptitude install libcrypt-gpg-perl
+ - or using CPAN:
+  - perl -MCPAN -e shell
+  - cpan> install Crypt::GPG
+- Start pidgin and enable the "Jabber GnuPG Plugin" under Tools > Plugins 
+
+
+== USAGE ==
+
+In a Jabber chat, type "enablegpg" to start a, encrypted conversation or "disablegpg" to end it.
+The activation/deactivation of encryption will be notified to you by a popup window.
+
+
+== LIMITATIONS ==
+
+You cannot assign a GPG key to a contact, it will be picked out automatically.
+For this to work however, there as to be a public key in your gpg keyring matching the jabber address of the person you want to talk to in Pidgin using encryption.
+
