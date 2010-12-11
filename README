@@ -4,6 +4,7 @@ This is a Jabber GnuPG Plugin (XEP-0027) for Pidgin taking advantage of Pidgin's
 == INSTALL ==
 
 - Download 'gnugp-plugin.pl' to ~/.purple/plugins or $PREFIX/lib/purple (creating the directory if it doesn't exist)
+- Edit it: find the line 'my $MY_KEY_ID = '0xDCC51FA6';' at the beginning of the file and change '0xDCC51FA6' to your GPG key ID.
 - Make sure you have the Crypt::GPG perl plugin, for example:
  - under Ubuntu: aptitude install libcrypt-gpg-perl
  - or using CPAN:
