@@ -1,4 +1,5 @@
 This is a Jabber GnuPG Plugin (XEP-0027) for Pidgin taking advantage of Pidgin's scripting capabilities.
+This code is distributed under the terms of the GPLv3.
 
 
 == INSTALL ==
@@ -15,12 +16,16 @@ This is a Jabber GnuPG Plugin (XEP-0027) for Pidgin taking advantage of Pidgin's
 
 == USAGE ==
 
-In a Jabber chat, type "enablegpg" to start a, encrypted conversation or "disablegpg" to end it.
+In a Jabber chat, type "enablegpg" to start an encrypted conversation or "disablegpg" to end it.
 The activation/deactivation of encryption will be notified to you by a popup window.
 
 
-== LIMITATIONS ==
+== CAVEATS ==
 
 You cannot assign a GPG key to a contact, it will be picked out automatically.
 For this to work however, there as to be a public key in your gpg keyring matching the jabber address of the person you want to talk to in Pidgin using encryption.
+
+In any case it is good enoug for my personal use, its original purpose.
+I may or may not improve the plugin in the future, depending on users' interesst in it.
+Feel free to enhance the code, submit a patch or open a bug ticket.
 
